@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BroDB: The Bro Database</title>
+    <style>
+        /* Reset and base styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: 'Arial', sans-serif;
+            line-height: 1.6;
+            color: #333;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #f4f4f4;
+        }
+        /* Typography */
+        h1, h2 {
+            color: #2c3e50;
+            margin-bottom: 20px;
+        }
+        h1 {
+            font-size: 2.5em;
+            border-bottom: 2px solid #3498db;
+            padding-bottom: 10px;
+        }
+        h2 {
+            font-size: 1.8em;
+            margin-top: 30px;
+        }
+        p, ul, pre {
+            margin-bottom: 20px;
+        }
+        /* Links */
+        a {
+            color: #3498db;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        /* Code blocks */
+        pre {
+            background-color: #2c3e50;
+            color: #ecf0f1;
+            padding: 15px;
+            border-radius: 5px;
+            overflow-x: auto;
+        }
+        /* Lists */
+        ul {
+            padding-left: 20px;
+        }
+        /* Responsive design */
+        @media (max-width: 600px) {
+            body {
+                padding: 10px;
+            }
+            h1 {
+                font-size: 2em;
+            }
+            h2 {
+                font-size: 1.5em;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>BroDB: The Bro Database</h1>
+    </header>
+    
+    <main>
+        <section>
+            <h2>What's the Deal, Bro?</h2>
+            <p>Welcome to BroDB, the database that's got your back like a true bro! Written from scratch in Go (because real bros don't need no third-party libraries). Inspired by Barney from TV series HIMYM.</p>
+        </section>
+
+        <section>
+            <h2>Features 😎</h2>
+            <ul>
+                <li><strong>B-tree Indexing:</strong> Our B-trees are so jacked, they make binary trees look like twigs.</li>
+                <li><strong>Table Rendering:</strong> Tables so pretty, you'll want to frame them and hang them in your man cave.</li>
+                <li><strong>Bro Query Language (BQL):</strong> SQL's cooler, more laid-back cousin. It's like talking to your bros, but for data!</li>
+                <li><strong>Bro-Friendly:</strong> If your database doesn't talk like your bros, is it even a real database?</li>
+            </ul>
+        </section>
+        <section>
+            <video width="720" muted autoplay>
+                <source src="https://private-user-images.githubusercontent.com/68278195/367592540-5751176b-c332-4c39-96a3-a3029cb6a03a.mp4?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MjY0NjM3MjYsIm5iZiI6MTcyNjQ2MzQyNiwicGF0aCI6Ii82ODI3ODE5NS8zNjc1OTI1NDAtNTc1MTE3NmItYzMzMi00YzM5LTk2YTMtYTMwMjljYjZhMDNhLm1wND9YLUFtei1BbGdvcml0aG09QVdTNC1ITUFDLVNIQTI1NiZYLUFtei1DcmVkZW50aWFsPUFLSUFWQ09EWUxTQTUzUFFLNFpBJTJGMjAyNDA5MTYlMkZ1cy1lYXN0LTElMkZzMyUyRmF3czRfcmVxdWVzdCZYLUFtei1EYXRlPTIwMjQwOTE2VDA1MTAyNlomWC1BbXotRXhwaXJlcz0zMDAmWC1BbXotU2lnbmF0dXJlPTZkNDcwMjZhODM2MDA0YmY1N2FhMzQxOWU1NzFjOTFlODIwNjA5ODJhOTE5ZWU0MWNmMjA0NGE0MjIzZjkyMWEmWC1BbXotU2lnbmVkSGVhZGVycz1ob3N0JmFjdG9yX2lkPTAma2V5X2lkPTAmcmVwb19pZD0wIn0.SQJCkVlI9Sv5fehsM5-MpdEfKvVnC_MQu0hZNbtLr04" type="video/mp4">
+                
+              </video> 
+        </section>
+
+        <section>
+            <h2>Getting Started: Time to Crush It!</h2>
+            <ol>
+                <li>Clone this repo</li>
+                <li>Build it</li>
+                <li>Run it (./brodb dbfile_name)</li>
+            </ol>
+        </section>
+
+        <section>
+            <h2>Bro Query Language: Speak Bro, Query Bro</h2>
+            
+            <h3>Create a Table</h3>
+            <pre>BRO, LET'S BUILD THIS PLAYBOOK pickup_lines (id INT,the_line TEXT,success_rate INT);</pre>
+            <p>Set the primary_key using:</p>
+            <pre>BRO, LET'S BUILD THIS PLAYBOOK pickup_lines (id INT,the_line TEXT,success_rate INT) id PRIMARY_KEY;</pre>
+            
+            <h3>Insert Data</h3>
+            <pre>BRO, SLAM THIS INTO pickup_line (id,the_line,success_rate) THIS CRAZY SHIT (7,"Sup, hottie?",89);</pre>
+            
+            <h3>Select Data</h3>
+            <pre>BRO, SHOW ME ALL FROM pickup_lines;</pre>
+            <p>Or get specific, bro:</p>
+            <pre>BRO, SHOW ME (id , the_line) FROM pickup_lines WHERE id = 7 and the_line="Sup, hottie?";</pre>
+            
+            <h3>Delete Data</h3>
+            <pre>BRO, DITCH THIS CRAP FROM pickup_lines where id =7;</pre>
+            
+            <h3>EXIT</h3>
+            <pre>exit</pre>
+        </section>
+
+        <section>
+            <h2>Contributing: Become a Bro-veloper</h2>
+            <ol>
+                <li>Fork it (like you fork your bicep curls)</li>
+                <li>Create your feature branch (git checkout -b feature/AmazingBroFeature)</li>
+                <li>Commit your changes (git commit -m 'Add some AmazingBroFeature')</li>
+                <li>Push to the branch (git push origin feature/AmazingBroFeature)</li>
+                <li>Open a Pull Request (and flex on them code reviewers)</li>
+            </ol>
+        </section>
+    </main>
+
+    <footer>
+        <p>BroDB - Written from scratch with no third-party libs used. Because that's how bros roll. 💪</p>
+    </footer>
+</body>
+</html>
